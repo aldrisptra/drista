@@ -3,9 +3,24 @@ const Footer = () => {
     <div className="mt-32 py-4 flex md:flex-row flex-col gap-6 md:gap-0 justify-between items-center px-10">
       <h1 className="text-2xl font-bold">Portfolio</h1>
       <div className="flex gap-7">
-        <a href="#beranda">Beranda</a>
-        <a href="#tentang">Tentang</a>
-        <a href="#proyek">Proyek</a>
+        <a
+          className="relative after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:w-0 after:h-[2px] after:bg-emerald-600 after:transition-all after:duration-400 hover:after:w-full"
+          href="#beranda"
+        >
+          Beranda
+        </a>
+        <a
+          className="relative after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:w-0 after:h-[2px] after:bg-emerald-600 after:transition-all after:duration-400 hover:after:w-full"
+          href="#tentang"
+        >
+          Tentang
+        </a>
+        <a
+          className="relative after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:w-0 after:h-[2px] after:bg-emerald-600 after:transition-all after:duration-400 hover:after:w-full"
+          href="#proyek"
+        >
+          Proyek
+        </a>
       </div>
       <div className="flex items-center gap-3">
         <a href="https://github.com/aldrisptra">
