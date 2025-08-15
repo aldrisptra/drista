@@ -1,5 +1,6 @@
 import DataImage from "./data";
 import { listTools, listProyek, listPengalaman } from "./data";
+import TextType from "./components/TextType/TextType";
 function App() {
   return (
     <>
@@ -14,10 +15,22 @@ function App() {
                   className="w-10 rounded-md"
                   loading="lazy"
                 />
-                <q>Tela Tela campur bakso, Telasooo.😜</q>
+                <q>
+                  Hello{" "}
+                  <span className="font-bold text-emerald-400">World!</span>{" "}
+                  Welcome to my{" "}
+                  <span className="font-bold text-emerald-400">Portfolio</span>
+                  .😜
+                </q>
               </div>
               <h1 className="text-3xl/tight font-bold mb-6">
-                Hi sundala, Saya Muhammad Aldri Saputra
+                <TextType
+                  text={["Muhammad Aldri Saputra", "Muhammad Aldri Saputra"]}
+                  typingSpeed={75}
+                  pauseDuration={1500}
+                  showCursor={true}
+                  cursorCharacter="|"
+                />
               </h1>
               <p className="text-base/loose mb-6 opacity-70">
                 Halo, saya Aldri mahasiswa Program Studi Informatika di Institut
@@ -175,7 +188,7 @@ function App() {
       <div
         className="pengalaman container mx-auto px-4 sm:px-6 lg:px-12 mt-32 py-10"
         id="pengalaman"
-        data-aos="fade-up"
+        data-aos="zoom-out"
         data-aos-duration="1000"
       >
         <h1 className="text-center text-3xl sm:text-4xl font-bold mb-2">
@@ -183,11 +196,11 @@ function App() {
         </h1>
         <p
           className="text-sm sm:text-base text-center opacity-50 max-w-2xl mx-auto"
-          data-aos="fade-up"
+          data-aos="zoom-out"
           data-aos-duration="1000"
           data-aos-delay="300"
         >
-          Beberapa kegiatan saya di kampus beserta sertifikatnya
+          Beberapa pengalaman organisasi dan kepanitiaan saya di kampus
         </p>
 
         <div className="pengalaman-box mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -195,7 +208,7 @@ function App() {
             <div
               key={exp.id}
               className="bg-emerald-900 border border-emerald-700 hover:border-emerald-500 rounded-md overflow-hidden flex flex-col"
-              data-aos="fade-up"
+              data-aos="zoom-in-down"
               data-aos-duration="1000"
               data-aos-delay={exp.dad}
             >
@@ -203,7 +216,7 @@ function App() {
               <img
                 src={exp.gambarKegiatan}
                 alt={exp.judul}
-                className="w-full h-40 sm:h-48 md:h-60 lg:h-72 object-cover"
+                className="w-full h-100 sm:h-100 md:h-100 lg:h-100 object-cover"
                 loading="lazy"
               />
 
@@ -224,7 +237,7 @@ function App() {
                   )}
                 </h3>
 
-                <p className="opacity-70 text-sm sm:text-base">
+                <p className="opacity-90 text-sm sm:text-base">
                   {exp.subjudul}
                 </p>
                 <ul className="list-disc list-inside opacity-70 mb-4 text-sm sm:text-base">
