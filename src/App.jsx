@@ -23,7 +23,7 @@ function App() {
                   .😜
                 </q>
               </div>
-              <h1 className="text-3xl/tight font-bold mb-6">
+              <h1 className="text-xl sm:text-2xl md:text-2xl lg:text-4xl xl:text-4xl font-bold mb-6 whitespace-nowrap overflow-hidden">
                 <TextType
                   text={["Muhammad Aldri Saputra", "Muhammad Aldri Saputra"]}
                   typingSpeed={75}
@@ -32,6 +32,7 @@ function App() {
                   cursorCharacter="|"
                 />
               </h1>
+
               <p className="text-base/loose mb-6 opacity-70">
                 Halo, saya Aldri mahasiswa Program Studi Informatika di Institut
                 Teknologi Kalimantan. Saya memiliki ketertarikan khusus di
