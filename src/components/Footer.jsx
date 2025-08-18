@@ -24,13 +24,13 @@ const Footer = () => {
       </div>
       <div className="flex items-center gap-3">
         <a href="https://github.com/aldrisptra">
-          <i className="ri-github-fill ri-2x"></i>
+          <i className="ri-github-fill ri-2x hover:text-emerald-700"></i>
         </a>
         <a href="https://instagram.com/aldrisptra">
-          <i className="ri-instagram-fill ri-2x"></i>
+          <i className="ri-instagram-fill ri-2x hover:text-emerald-700"></i>
         </a>
         <a href="https://linkedin.com/in/Muhammad Aldri Saputra">
-          <i className="ri-linkedin-fill ri-2x"></i>
+          <i className="ri-linkedin-fill ri-2x hover:text-emerald-700"></i>
         </a>
       </div>
     </div>

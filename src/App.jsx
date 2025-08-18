@@ -172,7 +172,9 @@ function App() {
                 </div>
                 <div className="mt-8 text-center">
                   <a
-                    href="#"
+                    href={proyek.linkProyek}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="bg-emerald-700 p-3 rounded-lg block border border-emerald-600 hover:bg-emerald-600"
                   >
                     Lihat Website
