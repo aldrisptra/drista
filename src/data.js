@@ -13,6 +13,7 @@ import Tools4 from "/assets/tools/js.png";
 import Tools5 from "/assets/tools/github.png";
 import Tools6 from "/assets/tools/canva.png";
 import Tools7 from "/assets/tools/figma.png";
+import Tools8 from "/assets/tools/nodejs.png";
 
 export const listTools = [
   {
@@ -66,7 +67,14 @@ export const listTools = [
     gambar: Tools7,
     nama: "Figma",
     ket: "Design App",
-    dad: "1100",
+    dad: "1200",
+  },
+  {
+    id: 8,
+    gambar: Tools8,
+    nama: "Node js",
+    ket: "runtime environment",
+    dad: "1400",
   },
 ];
 
